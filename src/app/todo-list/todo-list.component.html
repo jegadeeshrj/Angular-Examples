@@ -1,0 +1,16 @@
+<div class="todo-container">
+    <h2>My To-Do List</h2>
+
+    <!-- <p *ngIf="allTasksCompleted()">No tasks available</p> -->
+    <p *ngIf="allTasksOpen()">All tasks are open</p>
+    <p *ngIf="notAllTasksOpen()">You have {{ openCount() }} out of {{ tasks.length }} tasks open</p>
+
+    <ul>
+        <li *ngFor="let task of tasks" [ngClass]="{ completed: task.completed }">
+            {{ task.name }}
+            <button (click)="toggleTask(task)">
+                {{ task.completed ? 'Undo' : 'Done' }}
+            </button>
+        </li>
+    </ul>
+</div>
