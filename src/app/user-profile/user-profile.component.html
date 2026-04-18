@@ -1,0 +1,12 @@
+<div class="card" *ngIf="user">
+    <div class="avatar">{{ user.initials }}</div>
+
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.role }}</p>
+
+    <div class="status" [ngClass]="user.status.toLowerCase()">
+        {{ user.status }}
+    </div>
+
+    <button (click)="loadUser()">Reload</button>
+</div>

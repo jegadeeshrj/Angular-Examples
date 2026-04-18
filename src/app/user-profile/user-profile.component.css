@@ -1,0 +1,47 @@
+.card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #2f2f2f;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #dcdcf2;
+    color: #37377c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.status {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.active {
+    background: lightgreen;
+    color: darkgreen;
+}
+
+.inactive {
+    background: lightcoral;
+    color: darkred;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #1976d2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}

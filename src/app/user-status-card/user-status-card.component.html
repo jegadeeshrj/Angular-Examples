@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="avatar">{{ user.initials }}</div>
+
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.role }}</p>
+
+    <div class="status" [ngClass]="user.status.toLowerCase()">
+        <span class="dot"></span>
+        {{ user.status }}
+    </div>
+
+    <button (click)="toggleStatus()">
+        Toggle Status
+    </button>
+</div>
